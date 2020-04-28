@@ -7,6 +7,10 @@ end
 def create
   User.create(user_params)
 end
+#詳細
+def show
+  @user = User.find(params[:id])
+end
 #一覧画面
 def index
 @users = User.all
